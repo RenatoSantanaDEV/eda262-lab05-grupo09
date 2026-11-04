@@ -1,0 +1,30 @@
+{
+  "query_id": "53616883-1d42-4a92-a746-7b88564f472c",
+  "sql": "SELECT count(*) AS linhas, count(DISTINCT corrida_id) AS distintas, count(DISTINCT dt) AS dias, sum(CASE WHEN dt >= '2026-10-29' AND faixa_hora BETWEEN 0 AND 5 THEN 1 ELSE 0 END) AS madrugada_7d FROM corridas",
+  "statistics": {
+    "EngineExecutionTimeInMillis": 867,
+    "DataScannedInBytes": 2562941,
+    "TotalExecutionTimeInMillis": 1046,
+    "QueryQueueTimeInMillis": 92,
+    "ServicePreProcessingTimeInMillis": 65,
+    "QueryPlanningTimeInMillis": 168,
+    "ServiceProcessingTimeInMillis": 22,
+    "ResultReuseInformation": {
+      "ReusedPreviousResult": false
+    }
+  },
+  "rows": [
+    [
+      "linhas",
+      "distintas",
+      "dias",
+      "madrugada_7d"
+    ],
+    [
+      "518400",
+      "518400",
+      "30",
+      "11137"
+    ]
+  ]
+}

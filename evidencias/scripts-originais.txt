@@ -1,0 +1,8 @@
+Scripts preservados sem alterações em relação ao ZIP fornecido pelo professor.
+SHA-256:
+2b8cce07bdd25a2b9e4b2c853dda8d135df24d008ba54718067d55b1db8e435d  carregar-raw.sh
+2138e765b08a4fd9ef1b7e79815881210fb08d52cc6c0f92d82a6b0884f6ea97  rodar-job.sh
+b9010ef348a58e0b1aa636d30869937c53ab8a17d64b4d5063770904e5b23f61  verificacao/verifica.sh
+9fd45508c17bb8b28c897e0881ca56d9f259782dab0ade067d823f5a027db17a  terraform/scripts/pipeline-corridas.py
+25f9efbe19fe30561e02fb9f1383e016397c732f156841889e77dc7fb58e7c52  app/gerador-eventos.py
+c9d0f85367b7b98277cf8beb34d27f17b8f6f1a3635a336009a5cad78b3d262f  app/plantar-problemas.py

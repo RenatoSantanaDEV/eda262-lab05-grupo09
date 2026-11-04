@@ -1,0 +1,37 @@
+[
+  {
+    "Id": "jr_439303e0b95d128e6308c019d8fdbf355697ca9247da46a787a9cbe965da1e79",
+    "StartedOn": "2026-11-04 14:45:13.268000-03:00",
+    "CompletedOn": "2026-11-04 14:46:41.975000-03:00",
+    "JobRunState": "SUCCEEDED",
+    "Arguments": {
+      "--DIAS": "2026-11-01"
+    },
+    "ExecutionTime": 82,
+    "NumberOfWorkers": 2,
+    "WorkerType": "G.1X",
+    "GlueVersion": "4.0"
+  },
+  {
+    "Id": "jr_9660adfda1d4d6d61d2b423f0e31342c6049dd98237e18a5f9eda6db86a3121a",
+    "StartedOn": "2026-11-04 14:42:20.810000-03:00",
+    "CompletedOn": "2026-11-04 14:44:10.625000-03:00",
+    "JobRunState": "SUCCEEDED",
+    "Arguments": {},
+    "ExecutionTime": 99,
+    "NumberOfWorkers": 2,
+    "WorkerType": "G.1X",
+    "GlueVersion": "4.0"
+  },
+  {
+    "Id": "jr_55688ab572cbefbd141686cc2ba3a7661503b4b17790153fa856ca3b4f6c54e2",
+    "StartedOn": "2026-11-04 14:38:30.061000-03:00",
+    "CompletedOn": "2026-11-04 14:40:56.600000-03:00",
+    "JobRunState": "SUCCEEDED",
+    "Arguments": {},
+    "ExecutionTime": 139,
+    "NumberOfWorkers": 2,
+    "WorkerType": "G.1X",
+    "GlueVersion": "4.0"
+  }
+]

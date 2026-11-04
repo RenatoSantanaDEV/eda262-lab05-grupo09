@@ -1,0 +1,41 @@
+[
+  {
+    "service": "s3",
+    "resource": {
+      "Bucket": "eda-a25-lake-grupo09"
+    },
+    "absence_code": "404"
+  },
+  {
+    "service": "glue",
+    "resource": {
+      "Name": "eda_a25_grupo09"
+    },
+    "absence_code": "EntityNotFoundException"
+  },
+  {
+    "service": "glue",
+    "resource": {
+      "JobName": "eda-a25-grupo09-pipeline"
+    },
+    "absence_code": "EntityNotFoundException"
+  },
+  {
+    "service": "athena",
+    "resource": {
+      "WorkGroup": "eda-a25-grupo09-wg"
+    },
+    "absence_code": "InvalidRequestException"
+  },
+  {
+    "service": "iam",
+    "resource": {
+      "RoleName": "eda-a25-grupo09-glue"
+    },
+    "absence_code": "NoSuchEntity"
+  },
+  {
+    "backend_remoto": "preservado",
+    "lock_status": "ACTIVE"
+  }
+]

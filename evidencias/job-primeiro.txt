@@ -1,0 +1,23 @@
+>> disparando eda-a25-grupo09-pipeline com {}
+14:38:31  RUNNING
+14:38:52  RUNNING
+14:39:13  RUNNING
+14:39:35  RUNNING
+14:39:56  RUNNING
+14:40:17  RUNNING
+14:40:39  RUNNING
+14:41:00  SUCCEEDED
+{
+  "tabela": "corridas",
+  "modo": "sobrescrever",
+  "janela": 3,
+  "dias": "todos",
+  "chave": "corrida_id",
+  "linhas_lidas_da_raw": 535680,
+  "fora_da_janela": 0,
+  "duplicatas_removidas": 17280,
+  "linhas_gravadas_neste_run": 518400,
+  "dias_gravados_neste_run": 30,
+  "linhas_na_tabela": 518400,
+  "corridas_distintas_na_tabela": 518400
+}

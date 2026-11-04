@@ -1,0 +1,21 @@
+>> disparando eda-a25-grupo09-pipeline com {"--DIAS":"2026-11-01"}
+14:45:14  RUNNING
+14:45:36  RUNNING
+14:45:57  RUNNING
+14:46:18  RUNNING
+14:46:40  RUNNING
+14:47:01  SUCCEEDED
+{
+  "tabela": "corridas",
+  "modo": "sobrescrever",
+  "janela": 3,
+  "dias": "2026-11-01",
+  "chave": "corrida_id",
+  "linhas_lidas_da_raw": 535680,
+  "fora_da_janela": 0,
+  "duplicatas_removidas": 0,
+  "linhas_gravadas_neste_run": 17280,
+  "dias_gravados_neste_run": 1,
+  "linhas_na_tabela": 518400,
+  "corridas_distintas_na_tabela": 518400
+}

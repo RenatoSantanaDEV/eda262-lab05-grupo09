@@ -1,0 +1,36 @@
+Acquiring state lock. This may take a few moments...
+aws_iam_role.job: Creating...
+aws_glue_catalog_database.lake: Creating...
+aws_s3_bucket.lake: Creating...
+aws_glue_catalog_database.lake: Creation complete after 1s [id=325583868777:eda_a25_grupo09]
+aws_glue_catalog_table.raw: Creating...
+aws_glue_catalog_table.corridas: Creating...
+aws_iam_role.job: Creation complete after 1s [id=eda-a25-grupo09-glue]
+aws_iam_role_policy_attachment.glue: Creating...
+aws_iam_role_policy_attachment.glue: Creation complete after 1s [id=eda-a25-grupo09-glue-20261104173631707800000001]
+aws_glue_catalog_table.raw: Creation complete after 1s [id=325583868777:eda_a25_grupo09:raw_corridas]
+aws_glue_catalog_table.corridas: Creation complete after 1s [id=325583868777:eda_a25_grupo09:corridas]
+aws_s3_bucket.lake: Creation complete after 3s [id=eda-a25-lake-grupo09]
+aws_iam_role_policy.bucket: Creating...
+aws_athena_workgroup.wg: Creating...
+aws_s3_object.script: Creating...
+aws_s3_object.script: Creation complete after 1s [id=scripts/pipeline-corridas.py]
+aws_iam_role_policy.bucket: Creation complete after 1s [id=eda-a25-grupo09-glue:bucket-rw]
+aws_glue_job.pipeline: Creating...
+aws_athena_workgroup.wg: Creation complete after 2s [id=eda-a25-grupo09-wg]
+aws_glue_job.pipeline: Creation complete after 1s [id=eda-a25-grupo09-pipeline]
+
+Apply complete! Resources: 10 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+bucket = "eda-a25-lake-grupo09"
+database = "eda_a25_grupo09"
+decisoes = {
+  "chave_dedup" = "corrida_id"
+  "janela_atraso_dias" = 3
+  "modo_escrita" = "sobrescrever"
+}
+job = "eda-a25-grupo09-pipeline"
+tabela = "corridas"
+workgroup = "eda-a25-grupo09-wg"

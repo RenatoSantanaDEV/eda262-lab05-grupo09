@@ -1,0 +1,23 @@
+Acquiring state lock. This may take a few moments...
+aws_iam_role_policy.bucket: Destroying... [id=eda-a25-grupo09-glue:bucket-rw]
+aws_iam_role_policy_attachment.glue: Destroying... [id=eda-a25-grupo09-glue-20261104173631707800000001]
+aws_athena_workgroup.wg: Destroying... [id=eda-a25-grupo09-wg]
+aws_glue_job.pipeline: Destroying... [id=eda-a25-grupo09-pipeline]
+aws_glue_catalog_table.raw: Destroying... [id=325583868777:eda_a25_grupo09:raw_corridas]
+aws_glue_catalog_table.corridas: Destroying... [id=325583868777:eda_a25_grupo09:corridas]
+aws_glue_job.pipeline: Destruction complete after 1s
+aws_s3_object.script: Destroying... [id=scripts/pipeline-corridas.py]
+aws_glue_catalog_table.raw: Destruction complete after 1s
+aws_glue_catalog_table.corridas: Destruction complete after 1s
+aws_athena_workgroup.wg: Destruction complete after 1s
+aws_glue_catalog_database.lake: Destroying... [id=325583868777:eda_a25_grupo09]
+aws_s3_object.script: Destruction complete after 0s
+aws_iam_role_policy.bucket: Destruction complete after 1s
+aws_s3_bucket.lake: Destroying... [id=eda-a25-lake-grupo09]
+aws_iam_role_policy_attachment.glue: Destruction complete after 1s
+aws_iam_role.job: Destroying... [id=eda-a25-grupo09-glue]
+aws_glue_catalog_database.lake: Destruction complete after 1s
+aws_iam_role.job: Destruction complete after 1s
+aws_s3_bucket.lake: Destruction complete after 3s
+
+Apply complete! Resources: 0 added, 0 changed, 10 destroyed.

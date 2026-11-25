@@ -1,0 +1,72 @@
+
+Warning: Deprecated Parameter
+
+The parameter "dynamodb_table" is deprecated. Use parameter "use_lockfile"
+instead.
+Acquiring state lock. This may take a few moments...
+aws_iam_role_policy_attachment.perfil["analista"]: Destroying... [id=eda-a29-grupo09-analista-20261125160321886000000002]
+aws_iam_role_policy_attachment.perfil["prefeitura"]: Destroying... [id=eda-a29-grupo09-prefeitura-20261125160321837100000001]
+aws_lakeformation_permissions.ver_banco["analista-trusted"]: Destroying... [id=1805231586]
+aws_lakeformation_permissions.analista_trusted: Destroying... [id=2320827567]
+aws_glue_job.refined: Destroying... [id=eda-a29-grupo09-refined]
+aws_lakeformation_permissions.ver_banco["prefeitura-refined"]: Destroying... [id=2761899104]
+aws_lakeformation_permissions.ver_banco["analista-refined"]: Destroying... [id=1158335386]
+aws_lakeformation_permissions.analista_refined: Destroying... [id=3025005242]
+aws_glue_job.trusted: Destroying... [id=eda-a29-grupo09-trusted]
+aws_lakeformation_permissions.prefeitura_refined: Destroying... [id=1021286565]
+aws_iam_role_policy_attachment.perfil["prefeitura"]: Destruction complete after 1s
+aws_iam_role_policy_attachment.perfil["analista"]: Destruction complete after 1s
+aws_iam_policy.consumo: Destroying... [id=arn:aws:iam::<CONTA>:policy/eda-a29-grupo09-consumo]
+aws_glue_job.refined: Destruction complete after 1s
+aws_glue_job.trusted: Destruction complete after 1s
+aws_iam_role_policy.bucket: Destroying... [id=eda-a29-grupo09-glue:job-runtime]
+aws_s3_object.script["pipeline-corridas.py"]: Destroying... [id=scripts/pipeline-corridas.py]
+aws_s3_object.script["refinar-madrugada.py"]: Destroying... [id=scripts/refinar-madrugada.py]
+aws_lakeformation_permissions.analista_trusted: Destruction complete after 1s
+aws_lakeformation_permissions.analista_refined: Destruction complete after 1s
+aws_lakeformation_permissions.ver_banco["prefeitura-refined"]: Destruction complete after 1s
+aws_iam_role_policy.bucket: Destruction complete after 0s
+aws_iam_role.job: Destroying... [id=eda-a29-grupo09-glue]
+aws_lakeformation_permissions.ver_banco["analista-refined"]: Destruction complete after 1s
+aws_lakeformation_permissions.ver_banco["analista-trusted"]: Destruction complete after 1s
+aws_lakeformation_permissions.prefeitura_refined: Destruction complete after 1s
+terraform_data.isolamento_lf: Destroying... [id=84d73ce3-9e0f-0756-582a-e29a72d5736a]
+terraform_data.isolamento_lf: Destruction complete after 0s
+aws_lakeformation_resource.camada["refined"]: Destroying... [id=arn:aws:s3:::eda-a29-lake-grupo09/refined]
+aws_lakeformation_resource.camada["trusted"]: Destroying... [id=arn:aws:s3:::eda-a29-lake-grupo09/trusted]
+aws_lakeformation_resource.camada["raw"]: Destroying... [id=arn:aws:s3:::eda-a29-lake-grupo09/raw]
+aws_iam_role.perfil["prefeitura"]: Destroying... [id=eda-a29-grupo09-prefeitura]
+aws_iam_role.perfil["analista"]: Destroying... [id=eda-a29-grupo09-analista]
+aws_glue_catalog_table.refined: Destroying... [id=<CONTA>:eda_a29_grupo09_refined:madrugada_bairro]
+aws_iam_policy.consumo: Destruction complete after 0s
+aws_glue_catalog_table.raw: Destroying... [id=<CONTA>:eda_a29_grupo09_raw:corridas]
+aws_s3_object.script["pipeline-corridas.py"]: Destruction complete after 0s
+aws_glue_catalog_table.trusted: Destroying... [id=<CONTA>:eda_a29_grupo09_trusted:corridas]
+aws_s3_object.script["refinar-madrugada.py"]: Destruction complete after 0s
+aws_athena_workgroup.wg: Destroying... [id=eda-a29-grupo09-wg]
+aws_lakeformation_resource.camada["raw"]: Destruction complete after 0s
+aws_lakeformation_resource.camada["trusted"]: Destruction complete after 1s
+aws_lakeformation_resource.camada["refined"]: Destruction complete after 1s
+aws_iam_role_policy.lf: Destroying... [id=eda-a29-grupo09-lf:camadas-rw]
+aws_iam_role.job: Destruction complete after 1s
+aws_glue_catalog_table.raw: Destruction complete after 1s
+aws_iam_role_policy.lf: Destruction complete after 0s
+aws_iam_role.lf: Destroying... [id=eda-a29-grupo09-lf]
+aws_glue_catalog_table.trusted: Destruction complete after 1s
+aws_glue_catalog_table.refined: Destruction complete after 1s
+aws_glue_catalog_database.camada["raw"]: Destroying... [id=<CONTA>:eda_a29_grupo09_raw]
+aws_glue_catalog_database.camada["refined"]: Destroying... [id=<CONTA>:eda_a29_grupo09_refined]
+aws_glue_catalog_database.camada["trusted"]: Destroying... [id=<CONTA>:eda_a29_grupo09_trusted]
+aws_iam_role.perfil["prefeitura"]: Destruction complete after 1s
+aws_iam_role.perfil["analista"]: Destruction complete after 1s
+aws_athena_workgroup.wg: Destruction complete after 1s
+aws_s3_bucket_public_access_block.lake: Destroying... [id=eda-a29-lake-grupo09]
+aws_glue_catalog_database.camada["trusted"]: Destruction complete after 0s
+aws_glue_catalog_database.camada["raw"]: Destruction complete after 0s
+aws_glue_catalog_database.camada["refined"]: Destruction complete after 0s
+aws_iam_role.lf: Destruction complete after 0s
+aws_s3_bucket_public_access_block.lake: Destruction complete after 0s
+aws_s3_bucket.lake: Destroying... [id=eda-a29-lake-grupo09]
+aws_s3_bucket.lake: Destruction complete after 3s
+
+Apply complete! Resources: 0 added, 0 changed, 32 destroyed.

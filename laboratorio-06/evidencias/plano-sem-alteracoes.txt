@@ -1,0 +1,49 @@
+
+Warning: Deprecated Parameter
+
+The parameter "dynamodb_table" is deprecated. Use parameter "use_lockfile"
+instead.
+Acquiring state lock. This may take a few moments...
+data.aws_caller_identity.eu: Reading...
+aws_iam_role.job: Refreshing state... [id=eda-a29-grupo09-glue]
+aws_iam_role.lf: Refreshing state... [id=eda-a29-grupo09-lf]
+aws_s3_bucket.lake: Refreshing state... [id=eda-a29-lake-grupo09]
+data.aws_caller_identity.eu: Read complete after 1s [id=<CONTA>]
+data.aws_iam_session_context.eu: Reading...
+data.aws_iam_session_context.eu: Read complete after 0s [id=arn:aws:iam::<CONTA>:user/eda-grupo09]
+data.aws_lakeformation_data_lake_settings.conta: Reading...
+aws_iam_role.perfil["prefeitura"]: Refreshing state... [id=eda-a29-grupo09-prefeitura]
+aws_iam_role.perfil["analista"]: Refreshing state... [id=eda-a29-grupo09-analista]
+data.aws_lakeformation_data_lake_settings.conta: Read complete after 0s [id=3507020862]
+aws_glue_catalog_database.camada["raw"]: Refreshing state... [id=<CONTA>:eda_a29_grupo09_raw]
+aws_glue_catalog_database.camada["trusted"]: Refreshing state... [id=<CONTA>:eda_a29_grupo09_trusted]
+aws_glue_catalog_database.camada["refined"]: Refreshing state... [id=<CONTA>:eda_a29_grupo09_refined]
+aws_glue_catalog_table.raw: Refreshing state... [id=<CONTA>:eda_a29_grupo09_raw:corridas]
+aws_glue_catalog_table.trusted: Refreshing state... [id=<CONTA>:eda_a29_grupo09_trusted:corridas]
+aws_glue_catalog_table.refined: Refreshing state... [id=<CONTA>:eda_a29_grupo09_refined:madrugada_bairro]
+terraform_data.isolamento_lf: Refreshing state... [id=84d73ce3-9e0f-0756-582a-e29a72d5736a]
+aws_iam_role_policy.lf: Refreshing state... [id=eda-a29-grupo09-lf:camadas-rw]
+aws_iam_role_policy.bucket: Refreshing state... [id=eda-a29-grupo09-glue:job-runtime]
+aws_s3_bucket_public_access_block.lake: Refreshing state... [id=eda-a29-lake-grupo09]
+aws_s3_object.script["pipeline-corridas.py"]: Refreshing state... [id=scripts/pipeline-corridas.py]
+aws_s3_object.script["refinar-madrugada.py"]: Refreshing state... [id=scripts/refinar-madrugada.py]
+aws_athena_workgroup.wg: Refreshing state... [id=eda-a29-grupo09-wg]
+aws_lakeformation_resource.camada["raw"]: Refreshing state... [id=arn:aws:s3:::eda-a29-lake-grupo09/raw]
+aws_lakeformation_resource.camada["trusted"]: Refreshing state... [id=arn:aws:s3:::eda-a29-lake-grupo09/trusted]
+aws_lakeformation_resource.camada["refined"]: Refreshing state... [id=arn:aws:s3:::eda-a29-lake-grupo09/refined]
+aws_lakeformation_permissions.analista_refined: Refreshing state... [id=3025005242]
+aws_lakeformation_permissions.prefeitura_refined: Refreshing state... [id=1021286565]
+aws_lakeformation_permissions.ver_banco["analista-refined"]: Refreshing state... [id=1158335386]
+aws_lakeformation_permissions.ver_banco["prefeitura-refined"]: Refreshing state... [id=2761899104]
+aws_lakeformation_permissions.analista_trusted: Refreshing state... [id=2320827567]
+aws_lakeformation_permissions.ver_banco["analista-trusted"]: Refreshing state... [id=1805231586]
+aws_glue_job.trusted: Refreshing state... [id=eda-a29-grupo09-trusted]
+aws_glue_job.refined: Refreshing state... [id=eda-a29-grupo09-refined]
+aws_iam_policy.consumo: Refreshing state... [id=arn:aws:iam::<CONTA>:policy/eda-a29-grupo09-consumo]
+aws_iam_role_policy_attachment.perfil["analista"]: Refreshing state... [id=eda-a29-grupo09-analista-20261125160321886000000002]
+aws_iam_role_policy_attachment.perfil["prefeitura"]: Refreshing state... [id=eda-a29-grupo09-prefeitura-20261125160321837100000001]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration
+and found no differences, so no changes are needed.

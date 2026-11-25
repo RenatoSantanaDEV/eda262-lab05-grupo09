@@ -1,0 +1,17 @@
+conta_aws = "000000000000"
+turma     = "EDA2026.2"
+sufixo    = "grupo09"
+
+escopo_prefeitura        = "tabela"
+colunas_ocultas_analista = ["motorista_id", "passageiro_id"]
+
+contrato_refined = {
+  descricao   = "Corridas e receita em BRL por bairro e dia na madrugada, das 00:00 às 05:59 UTC; sem identificadores de corrida, motorista ou passageiro."
+  dono        = "Grupo09 - engenharia de dados"
+  atualizacao = "Após o pipeline diário; sobrescreve somente as partições dt recalculadas."
+  comentarios = {
+    bairro   = "Bairro de início da corrida."
+    corridas = "Quantidade de corridas iniciadas entre 00:00 e 05:59 UTC no bairro e dia."
+    receita  = "Soma do valor das corridas da madrugada, em BRL, arredondada a 2 casas."
+  }
+}

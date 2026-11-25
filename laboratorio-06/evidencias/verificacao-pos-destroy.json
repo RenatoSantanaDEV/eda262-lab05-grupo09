@@ -1,0 +1,92 @@
+{
+  "modo": "pos-destroy",
+  "gerado_em_utc": "20261125T161836Z",
+  "resultados": [
+    {
+      "item": "estado-terraform",
+      "status": "PASSA",
+      "detalhe": "estado do projeto vazio"
+    },
+    {
+      "item": "ausente-bucket",
+      "status": "PASSA",
+      "detalhe": "bucket: AUSENTE"
+    },
+    {
+      "item": "ausente-workgroup",
+      "status": "PASSA",
+      "detalhe": "workgroup: AUSENTE"
+    },
+    {
+      "item": "ausente-politica-consumo",
+      "status": "PASSA",
+      "detalhe": "politica-consumo: AUSENTE"
+    },
+    {
+      "item": "ausente-database-raw",
+      "status": "PASSA",
+      "detalhe": "database-raw: AUSENTE"
+    },
+    {
+      "item": "ausente-database-trusted",
+      "status": "PASSA",
+      "detalhe": "database-trusted: AUSENTE"
+    },
+    {
+      "item": "ausente-database-refined",
+      "status": "PASSA",
+      "detalhe": "database-refined: AUSENTE"
+    },
+    {
+      "item": "ausente-job-trusted",
+      "status": "PASSA",
+      "detalhe": "job-trusted: AUSENTE"
+    },
+    {
+      "item": "ausente-job-refined",
+      "status": "PASSA",
+      "detalhe": "job-refined: AUSENTE"
+    },
+    {
+      "item": "ausente-papel-glue",
+      "status": "PASSA",
+      "detalhe": "papel-glue: AUSENTE"
+    },
+    {
+      "item": "ausente-papel-lf",
+      "status": "PASSA",
+      "detalhe": "papel-lf: AUSENTE"
+    },
+    {
+      "item": "ausente-papel-prefeitura",
+      "status": "PASSA",
+      "detalhe": "papel-prefeitura: AUSENTE"
+    },
+    {
+      "item": "ausente-papel-analista",
+      "status": "PASSA",
+      "detalhe": "papel-analista: AUSENTE"
+    },
+    {
+      "item": "registro-lake-formation",
+      "status": "PASSA",
+      "detalhe": "localizações restantes: nenhuma"
+    },
+    {
+      "item": "grants-lake-formation",
+      "status": "PASSA",
+      "detalhe": "grants restantes do exercício: nenhum"
+    },
+    {
+      "item": "log-groups",
+      "status": "PASSA",
+      "detalhe": "log groups com eda-a29-grupo09: nenhum (os /aws-glue/jobs/* são compartilhados da conta)"
+    },
+    {
+      "item": "lf-global-preservado",
+      "status": "PASSA",
+      "detalhe": "configuração global do Lake Formation idêntica da linha de base (5bd078456caf)"
+    }
+  ],
+  "passou": true
+}

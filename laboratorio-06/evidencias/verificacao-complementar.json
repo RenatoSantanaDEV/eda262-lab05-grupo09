@@ -1,0 +1,152 @@
+{
+  "modo": "principal",
+  "gerado_em_utc": "20261125T161720Z",
+  "resultados": [
+    {
+      "item": "isolamento-raw",
+      "status": "PASSA",
+      "detalhe": "eda_a29_grupo09_raw: permissões padrão para tabelas novas = []"
+    },
+    {
+      "item": "isolamento-trusted",
+      "status": "PASSA",
+      "detalhe": "eda_a29_grupo09_trusted: permissões padrão para tabelas novas = []"
+    },
+    {
+      "item": "isolamento-refined",
+      "status": "PASSA",
+      "detalhe": "eda_a29_grupo09_refined: permissões padrão para tabelas novas = []"
+    },
+    {
+      "item": "iam-allowed-principals",
+      "status": "PASSA",
+      "detalhe": "nenhum IAM_ALLOWED_PRINCIPALS nos 3 databases e 3 tabelas"
+    },
+    {
+      "item": "grants-prefeitura",
+      "status": "PASSA",
+      "detalhe": "grants exatamente iguais ao desenho"
+    },
+    {
+      "item": "grants-analista",
+      "status": "PASSA",
+      "detalhe": "grants exatamente iguais ao desenho"
+    },
+    {
+      "item": "prefeitura-refined",
+      "status": "PASSA",
+      "detalhe": "soma da madrugada desde 2026-11-19 = 11137 (esperado 11137)"
+    },
+    {
+      "item": "prefeitura-raw-negada",
+      "status": "PASSA",
+      "detalhe": "FAILED: recusa de autorização — Insufficient permissions to execute the query. Insufficient Lake Formation permission(s): Required Describe on eda_a29_grupo09_raw  Insufficient Lake Formation "
+    },
+    {
+      "item": "prefeitura-trusted-negada",
+      "status": "PASSA",
+      "detalhe": "FAILED: recusa de autorização — Insufficient permissions to execute the query. Insufficient Lake Formation permission(s): Required Describe on eda_a29_grupo09_trusted  Insufficient Lake Format"
+    },
+    {
+      "item": "analista-raw-negada",
+      "status": "PASSA",
+      "detalhe": "FAILED: recusa de autorização — Insufficient permissions to execute the query. Insufficient Lake Formation permission(s): Required Describe on eda_a29_grupo09_raw  Insufficient Lake Formation "
+    },
+    {
+      "item": "analista-count-bairro",
+      "status": "PASSA",
+      "detalhe": "count(bairro) = 518400 (esperado 518400)"
+    },
+    {
+      "item": "analista-motorista_id-negada",
+      "status": "PASSA",
+      "detalhe": "FAILED: recusa de autorização — COLUMN_NOT_FOUND: Column 'motorista_id' cannot be resolved or requester is not authorized to access requested resources Column 'motorista_id' cannot be resolved"
+    },
+    {
+      "item": "analista-passageiro_id-negada",
+      "status": "PASSA",
+      "detalhe": "FAILED: recusa de autorização — COLUMN_NOT_FOUND: Column 'passageiro_id' cannot be resolved or requester is not authorized to access requested resources Column 'passageiro_id' cannot be resolv"
+    },
+    {
+      "item": "analista-corrida-id-visivel",
+      "status": "PASSA",
+      "detalhe": "SELECT corrida_id: SUCCEEDED"
+    },
+    {
+      "item": "analista-colunas-visiveis",
+      "status": "PASSA",
+      "detalhe": "9 de 11 colunas de dados visíveis: corrida_id,bairro,inicio,fim,distancia_km,duracao_min,valor,faixa_hora,chegada"
+    },
+    {
+      "item": "s3-list-prefeitura-raw",
+      "status": "PASSA",
+      "detalhe": "ListBucket em raw/ como prefeitura: NEGADO"
+    },
+    {
+      "item": "s3-get-prefeitura-raw",
+      "status": "PASSA",
+      "detalhe": "GetObject em raw/corridas/dt=2026-10-27/parte-0001.json como prefeitura: NEGADO"
+    },
+    {
+      "item": "s3-list-prefeitura-trusted",
+      "status": "PASSA",
+      "detalhe": "ListBucket em trusted/ como prefeitura: NEGADO"
+    },
+    {
+      "item": "s3-get-prefeitura-trusted",
+      "status": "PASSA",
+      "detalhe": "GetObject em trusted/corridas/dt=2026-10-27/part-00001-e67bddf8-e9ba-4bbf-90ab-5bbec043737a.c000.snappy.parquet como prefeitura: NEGADO"
+    },
+    {
+      "item": "s3-list-prefeitura-refined",
+      "status": "PASSA",
+      "detalhe": "ListBucket em refined/ como prefeitura: NEGADO"
+    },
+    {
+      "item": "s3-get-prefeitura-refined",
+      "status": "PASSA",
+      "detalhe": "GetObject em refined/madrugada_bairro/dt=2026-10-27/part-00000-3ba83175-fe35-47cb-ad40-386057dfecb7.c000.snappy.parquet como prefeitura: NEGADO"
+    },
+    {
+      "item": "s3-list-analista-raw",
+      "status": "PASSA",
+      "detalhe": "ListBucket em raw/ como analista: NEGADO"
+    },
+    {
+      "item": "s3-get-analista-raw",
+      "status": "PASSA",
+      "detalhe": "GetObject em raw/corridas/dt=2026-10-27/parte-0001.json como analista: NEGADO"
+    },
+    {
+      "item": "s3-list-analista-trusted",
+      "status": "PASSA",
+      "detalhe": "ListBucket em trusted/ como analista: NEGADO"
+    },
+    {
+      "item": "s3-get-analista-trusted",
+      "status": "PASSA",
+      "detalhe": "GetObject em trusted/corridas/dt=2026-10-27/part-00001-e67bddf8-e9ba-4bbf-90ab-5bbec043737a.c000.snappy.parquet como analista: NEGADO"
+    },
+    {
+      "item": "s3-list-analista-refined",
+      "status": "PASSA",
+      "detalhe": "ListBucket em refined/ como analista: NEGADO"
+    },
+    {
+      "item": "s3-get-analista-refined",
+      "status": "PASSA",
+      "detalhe": "GetObject em refined/madrugada_bairro/dt=2026-10-27/part-00000-3ba83175-fe35-47cb-ad40-386057dfecb7.c000.snappy.parquet como analista: NEGADO"
+    },
+    {
+      "item": "contrato-refined",
+      "status": "PASSA",
+      "detalhe": "descrição 137 caracteres; dono 'Grupo09 - engenharia de dados'; atualização 'Após o pipeline diário; sobrescreve somente as partições dt recalculadas.'; colunas sem comentário: -"
+    },
+    {
+      "item": "lf-global-preservado",
+      "status": "PASSA",
+      "detalhe": "configuração global do Lake Formation idêntica da linha de base (5bd078456caf)"
+    }
+  ],
+  "passou": true
+}

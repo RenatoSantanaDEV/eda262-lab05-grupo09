@@ -1,0 +1,12 @@
+{
+  "JobName": "eda-a29-grupo09-trusted",
+  "Id": "jr_fc78ff50e0532ad375ba9b34ff7d32b44e54ea52368af139f711d4530c454165",
+  "JobRunState": "SUCCEEDED",
+  "StartedOn": 1795622743.949,
+  "CompletedOn": 1795622925.085,
+  "ExecutionTime": 136,
+  "DPUSeconds": 273.0,
+  "WorkerType": "G.1X",
+  "NumberOfWorkers": 2,
+  "GlueVersion": "4.0"
+}

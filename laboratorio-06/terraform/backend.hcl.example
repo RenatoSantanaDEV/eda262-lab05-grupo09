@@ -1,0 +1,5 @@
+bucket         = "eda262-g09-tfstate"
+key            = "aula-29/grupo09/terraform.tfstate"
+region         = "us-east-1"
+dynamodb_table = "eda262-g09-terraform-locks"
+encrypt        = true

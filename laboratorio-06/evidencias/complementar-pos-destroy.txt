@@ -1,0 +1,19 @@
+PASSA  [estado-terraform]  estado do projeto vazio
+PASSA  [ausente-bucket]  bucket: AUSENTE
+PASSA  [ausente-workgroup]  workgroup: AUSENTE
+PASSA  [ausente-politica-consumo]  politica-consumo: AUSENTE
+PASSA  [ausente-database-raw]  database-raw: AUSENTE
+PASSA  [ausente-database-trusted]  database-trusted: AUSENTE
+PASSA  [ausente-database-refined]  database-refined: AUSENTE
+PASSA  [ausente-job-trusted]  job-trusted: AUSENTE
+PASSA  [ausente-job-refined]  job-refined: AUSENTE
+PASSA  [ausente-papel-glue]  papel-glue: AUSENTE
+PASSA  [ausente-papel-lf]  papel-lf: AUSENTE
+PASSA  [ausente-papel-prefeitura]  papel-prefeitura: AUSENTE
+PASSA  [ausente-papel-analista]  papel-analista: AUSENTE
+PASSA  [registro-lake-formation]  localizações restantes: nenhuma
+PASSA  [grants-lake-formation]  grants restantes do exercício: nenhum
+PASSA  [log-groups]  log groups com eda-a29-grupo09: nenhum (os /aws-glue/jobs/* são compartilhados da conta)
+PASSA  [lf-global-preservado]  configuração global do Lake Formation idêntica da linha de base (5bd078456caf)
+
+Resultado complementar (pos-destroy): 17 PASSA, 0 FALHA · evidência em .runtime/verificacao/complementar-pos-destroy-20261125T161836Z.json

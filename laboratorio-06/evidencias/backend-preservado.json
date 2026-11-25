@@ -1,0 +1,7 @@
+{
+  "backend_bucket_preservado": true,
+  "chave_estado_lab06_preservada": "aula-29/grupo09/terraform.tfstate",
+  "estado_bytes": 1747,
+  "recursos_no_estado": 0,
+  "lock_dynamodb_status": "ACTIVE"
+}

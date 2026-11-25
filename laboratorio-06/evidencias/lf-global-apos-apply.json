@@ -1,0 +1,8 @@
+{
+  "fase": "apos_apply",
+  "configuracao_global_preservada": true,
+  "canonizacao": "listas-como-conjuntos-v1",
+  "sha256_linha_base": "5bd078456caf16ed313d99242942910fd98fa2d454d6195dde635272c52a580b",
+  "sha256_atual": "5bd078456caf16ed313d99242942910fd98fa2d454d6195dde635272c52a580b",
+  "origem_linha_base": "snapshot anterior ao apply; migração validada pelo hash legado"
+}

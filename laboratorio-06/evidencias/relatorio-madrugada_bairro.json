@@ -1,0 +1,11 @@
+{
+  "tabela": "madrugada_bairro",
+  "dias": "todos",
+  "corridas_lidas_da_trusted": 518400,
+  "corridas_da_madrugada": 47730,
+  "linhas_gravadas_neste_run": 660,
+  "dias_gravados_neste_run": 30,
+  "linhas_na_tabela": 660,
+  "bairros_na_tabela": 22,
+  "corridas_somadas_na_tabela": 47730
+}

@@ -1,0 +1,90 @@
+{
+  "PrincipalResourcePermissions": [
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<CONTA>:role/eda-a29-grupo09-analista"
+      },
+      "Resource": {
+        "Database": {
+          "CatalogId": "<CONTA>",
+          "Name": "eda_a29_grupo09_trusted"
+        }
+      },
+      "Permissions": [
+        "DESCRIBE"
+      ],
+      "PermissionsWithGrantOption": []
+    },
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<CONTA>:role/eda-a29-grupo09-analista"
+      },
+      "Resource": {
+        "Database": {
+          "CatalogId": "<CONTA>",
+          "Name": "eda_a29_grupo09_refined"
+        }
+      },
+      "Permissions": [
+        "DESCRIBE"
+      ],
+      "PermissionsWithGrantOption": []
+    },
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<CONTA>:role/eda-a29-grupo09-analista"
+      },
+      "Resource": {
+        "TableWithColumns": {
+          "CatalogId": "<CONTA>",
+          "DatabaseName": "eda_a29_grupo09_trusted",
+          "Name": "corridas",
+          "ColumnWildcard": {
+            "ExcludedColumnNames": [
+              "motorista_id",
+              "passageiro_id"
+            ]
+          }
+        }
+      },
+      "Permissions": [
+        "SELECT"
+      ],
+      "PermissionsWithGrantOption": []
+    },
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<CONTA>:role/eda-a29-grupo09-analista"
+      },
+      "Resource": {
+        "Table": {
+          "CatalogId": "<CONTA>",
+          "DatabaseName": "eda_a29_grupo09_refined",
+          "Name": "ALL_TABLES",
+          "TableWildcard": {}
+        }
+      },
+      "Permissions": [
+        "DESCRIBE"
+      ],
+      "PermissionsWithGrantOption": []
+    },
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<CONTA>:role/eda-a29-grupo09-analista"
+      },
+      "Resource": {
+        "TableWithColumns": {
+          "CatalogId": "<CONTA>",
+          "DatabaseName": "eda_a29_grupo09_refined",
+          "Name": "ALL_TABLES",
+          "ColumnWildcard": {}
+        }
+      },
+      "Permissions": [
+        "SELECT"
+      ],
+      "PermissionsWithGrantOption": []
+    }
+  ]
+}

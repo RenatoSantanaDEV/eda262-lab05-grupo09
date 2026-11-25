@@ -1,0 +1,7 @@
+{
+  "dpu_segundos_reportados": 405.0,
+  "tarifa_usd_dpu_hora": 0.44,
+  "glue_usd_estimado": 0.0495,
+  "fonte": "https://aws.amazon.com/glue/pricing/",
+  "observacao": "Estimativa para os dois jobs, não fatura. Athena/S3/logs não incluídos; duração e DPUSeconds consultados após SUCCEEDED."
+}

@@ -1,0 +1,29 @@
+{
+  "data": "2026-11-25",
+  "pytest_verificador": {
+    "passed": 222,
+    "failed": 0
+  },
+  "pytest_isolamento": {
+    "passed": 11,
+    "failed": 0
+  },
+  "pytest_pipeline": {
+    "passed": 2,
+    "failed": 0,
+    "duracao_segundos": 114.1
+  },
+  "terraform_test_mock": {
+    "passed": 8,
+    "failed": 0
+  },
+  "terraform_validate": "aprovado",
+  "python_compile": "9 arquivos aprovados",
+  "bash_sintaxe": "aprovado",
+  "shellcheck": "não executado no Mac; não contabilizado",
+  "pipeline_python_ast": "igual ao original após desconsiderar docstrings",
+  "gerador_bytes": "iguais ao original",
+  "comentarios_python_explicativos": 0,
+  "pytest_total": 235,
+  "revisao_independente": "Claude Opus 5.5, esforço alto; implementação no aplicativo e correções do verificador revisadas via Claude Code."
+}

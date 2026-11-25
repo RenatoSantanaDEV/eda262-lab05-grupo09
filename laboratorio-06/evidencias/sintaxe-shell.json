@@ -1,0 +1,30 @@
+[
+  {
+    "file": "carregar-raw.sh",
+    "passed": true
+  },
+  {
+    "file": "como.sh",
+    "passed": true
+  },
+  {
+    "file": "rodar-jobs.sh",
+    "passed": true
+  },
+  {
+    "file": "terraform/lf/isolar-camadas.sh",
+    "passed": true
+  },
+  {
+    "file": "testes/rodar-testes-locais.sh",
+    "passed": true
+  },
+  {
+    "file": "verificacao/verifica-complementar.sh",
+    "passed": true
+  },
+  {
+    "file": "verificacao/verifica.sh",
+    "passed": true
+  }
+]

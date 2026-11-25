@@ -1,0 +1,31 @@
+PASSA  [isolamento-raw]  eda_a29_grupo09_raw: permissões padrão para tabelas novas = []
+PASSA  [isolamento-trusted]  eda_a29_grupo09_trusted: permissões padrão para tabelas novas = []
+PASSA  [isolamento-refined]  eda_a29_grupo09_refined: permissões padrão para tabelas novas = []
+PASSA  [iam-allowed-principals]  nenhum IAM_ALLOWED_PRINCIPALS nos 3 databases e 3 tabelas
+PASSA  [grants-prefeitura]  grants exatamente iguais ao desenho
+PASSA  [grants-analista]  grants exatamente iguais ao desenho
+PASSA  [prefeitura-refined]  soma da madrugada desde 2026-11-19 = 11137 (esperado 11137)
+PASSA  [prefeitura-raw-negada]  FAILED: recusa de autorização — Insufficient permissions to execute the query. Insufficient Lake Formation permission(s): Required Describe on eda_a29_grupo09_raw  Insufficient Lake Formation
+PASSA  [prefeitura-trusted-negada]  FAILED: recusa de autorização — Insufficient permissions to execute the query. Insufficient Lake Formation permission(s): Required Describe on eda_a29_grupo09_trusted  Insufficient Lake Format
+PASSA  [analista-raw-negada]  FAILED: recusa de autorização — Insufficient permissions to execute the query. Insufficient Lake Formation permission(s): Required Describe on eda_a29_grupo09_raw  Insufficient Lake Formation
+PASSA  [analista-count-bairro]  count(bairro) = 518400 (esperado 518400)
+PASSA  [analista-motorista_id-negada]  FAILED: recusa de autorização — COLUMN_NOT_FOUND: Column 'motorista_id' cannot be resolved or requester is not authorized to access requested resources Column 'motorista_id' cannot be resolved
+PASSA  [analista-passageiro_id-negada]  FAILED: recusa de autorização — COLUMN_NOT_FOUND: Column 'passageiro_id' cannot be resolved or requester is not authorized to access requested resources Column 'passageiro_id' cannot be resolv
+PASSA  [analista-corrida-id-visivel]  SELECT corrida_id: SUCCEEDED
+PASSA  [analista-colunas-visiveis]  9 de 11 colunas de dados visíveis: corrida_id,bairro,inicio,fim,distancia_km,duracao_min,valor,faixa_hora,chegada
+PASSA  [s3-list-prefeitura-raw]  ListBucket em raw/ como prefeitura: NEGADO
+PASSA  [s3-get-prefeitura-raw]  GetObject em raw/corridas/dt=2026-10-27/parte-0001.json como prefeitura: NEGADO
+PASSA  [s3-list-prefeitura-trusted]  ListBucket em trusted/ como prefeitura: NEGADO
+PASSA  [s3-get-prefeitura-trusted]  GetObject em trusted/corridas/dt=2026-10-27/part-00001-e67bddf8-e9ba-4bbf-90ab-5bbec043737a.c000.snappy.parquet como prefeitura: NEGADO
+PASSA  [s3-list-prefeitura-refined]  ListBucket em refined/ como prefeitura: NEGADO
+PASSA  [s3-get-prefeitura-refined]  GetObject em refined/madrugada_bairro/dt=2026-10-27/part-00000-3ba83175-fe35-47cb-ad40-386057dfecb7.c000.snappy.parquet como prefeitura: NEGADO
+PASSA  [s3-list-analista-raw]  ListBucket em raw/ como analista: NEGADO
+PASSA  [s3-get-analista-raw]  GetObject em raw/corridas/dt=2026-10-27/parte-0001.json como analista: NEGADO
+PASSA  [s3-list-analista-trusted]  ListBucket em trusted/ como analista: NEGADO
+PASSA  [s3-get-analista-trusted]  GetObject em trusted/corridas/dt=2026-10-27/part-00001-e67bddf8-e9ba-4bbf-90ab-5bbec043737a.c000.snappy.parquet como analista: NEGADO
+PASSA  [s3-list-analista-refined]  ListBucket em refined/ como analista: NEGADO
+PASSA  [s3-get-analista-refined]  GetObject em refined/madrugada_bairro/dt=2026-10-27/part-00000-3ba83175-fe35-47cb-ad40-386057dfecb7.c000.snappy.parquet como analista: NEGADO
+PASSA  [contrato-refined]  descrição 137 caracteres; dono 'Grupo09 - engenharia de dados'; atualização 'Após o pipeline diário; sobrescreve somente as partições dt recalculadas.'; colunas sem comentário: -
+PASSA  [lf-global-preservado]  configuração global do Lake Formation idêntica da linha de base (5bd078456caf)
+
+Resultado complementar (principal): 29 PASSA, 0 FALHA · evidência em .runtime/verificacao/complementar-principal-20261125T161720Z.json

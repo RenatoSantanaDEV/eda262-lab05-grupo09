@@ -1,0 +1,12 @@
+{
+  "JobName": "eda-a29-grupo09-refined",
+  "Id": "jr_9b2c00c02c35dc7c1bb92b958eab19018ae76f3c1420d66bba24934b5bcb1bad",
+  "JobRunState": "SUCCEEDED",
+  "StartedOn": 1795622940.07,
+  "CompletedOn": 1795623009.911,
+  "ExecutionTime": 66,
+  "DPUSeconds": 132.0,
+  "WorkerType": "G.1X",
+  "NumberOfWorkers": 2,
+  "GlueVersion": "4.0"
+}
